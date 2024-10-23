@@ -1,0 +1,116 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #F7F7F9; /* Fundo mais claro */
+    --branco: #FFFFFF;
+    --laranja: #FF6F30; /* Laranja mais vibrante */
+    --azul-degrade: linear-gradient(97.54deg, #003c47 35.49%, #00778d 165.37%); /* Degradê mais suave */
+    --fonte-principal: "Poppins", sans-serif; /* Adicionando uma fonte fallback */
+    --azul: #003C47; /* Azul mais profundo */
+    --cinza-claro: #E0E0E0; /* Para bordas e separadores */
+    --cinza-escuro: #4A4A4A; /* Para textos secundários */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cabeçalho__menu-hamburguer {
+    color: var(--branco);
+}
+
+.banner {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--laranja);
+    color: var(--branco);
+}
+
+.banner__titulo {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner__texto {
+    font-size: 1.2rem;
+}
+
+.carrossel__titulo {
+    font-size: 1.8rem;
+    color: var(--azul);
+    margin: 2rem 0 1rem;
+}
+
+.card {
+    background: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__descrição {
+    padding: 1rem;
+}
+
+.descrição__titulo-produto {
+    font-size: 1.5rem;
+    color: var(--azul);
+}
+
+.tópicos {
+    background: var(--branco);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.tópicos__titulo {
+    font-size: 1.8rem;
+    color: var(--azul);
+}
+
+.contato {
+    background: var(--laranja);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem;
+}
+
+.rodapé {
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Botões */
+.botões__item img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.botões__item img:hover {
+    transform: scale(1.1);
+}
